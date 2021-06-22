@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>80 River</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" />
+        <link rel="icon" type="text/css" href="images/favicon.png" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+         <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+        <link href="css/slick-theme.css" rel="stylesheet" />
+        <link href="css/slick.css" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/media.css" />
+    </head>
+    <body>
+        <!--header section start-->
+        <section class="header section">
+          <header>
+            <div class="container">
+              <div class="header-cont">
+                <div class="row">
+                  <div class="col-sm-2">
+                    <div class="logo">
+                      <a href="index.html"><img src="images/logo.png" class="img-fluid" alt="img"></a>
+                    </div>
+                  </div>
+                    <div class="col-sm-10">
+                      <div class="navigation">
+                        <ul>
+                           <li class="active"><a href="index.html">Home</a></li>
+                          <li><a href="event.html">Events</a></li>
+                          <li><a href="reservation.html">Reservations</a></li>
+                          <li><a href="order-online.html">Order Online</a></li>
+                          <li><a href="shop.html">Shop</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          <li><a href="#"><img src="images/user.png" class="img-fluid" alt="img"></a></li>
+
+
+                        </ul>
+                      </div>
+                    </div>
+                    <!--mobile menu section-->
+        <div class="mobile-menu">
+            <div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <ul>
+                           <li class="active"><a href="index.html">Home</a></li>
+                          <li><a href="event.html">Events</a></li>
+                          <li><a href="reservation.html">Reservations</a></li>
+                          <li><a href="order-online.html">Order Online</a></li>
+                          <li><a href="shop.html">Shop</a></li>
+                          <li><a href="contact.html">Contact</a></li>
+                          
+                        </ul>
+</div>
+<span style="font-size:35px;cursor:pointer;color: #fff;" onclick="openNav()">&#9776;</span>
+        </div>
+        <!--mobile menu section end-->
+                  </div>
+                </div>
+              </div>
+          </header>
+        </section>
+        <!--header section end-->
+
+        <!--banner section start-->
+        <section class="section banner banner-inner reserv-banner">
+          <div class="container">
+            <div class="banner-txt">
+              <div class="reserv-cont">
+              
+            <h2>Make A Reservation</h2>
+            <p class="hd-para text-white">Reserve a table at the most celebrated pub! Simply select the table, confirm the reservation, and start working on your appetite.</p>
+            <div class="reserv-form">
+              <div class="filter mt-0">
+    <form>
+      <div class="filter-box">
+        <div class="form-group"><label><img src="images/user-img.png" class="img-fluid" alt="img"></label>
+  <select class="form-control" id="">
+    <option> 2 people</option>
+    <option>2</option>
+  </select>
+</div>
+      </div>
+      <div class="filter-box">
+        <div class="form-group"><label><img src="images/calendar.png" class="img-fluid" alt="img"></label>
+    <input type="text" class="form-control" placeholder="Apr 29, 2021" onfocus="(this.type='date')">
+
+</div>
+      </div>
+      <div class="filter-box">
+        <div class="form-group"><label><img src="images/clock.png" class="img-fluid" alt="img"></label>
+ <input type="text" class="form-control" placeholder="7:00 PM">
+</div>
+      </div>
+      <div class="filter-box">
+        <div class="form-group"><label><img src="images/search.png" class="img-fluid" alt="img"></label>
+ <input type="text" class="form-control" placeholder="Location, Restaurant, or Cuision">
+</div>
+      </div>
+      <div class="filter-box">
+        <button class="btn">Let's Go<span class="btn-img"><img src="images/send.png" class="img-fluid" alt="img"></span></button>
+      </div>
+  </form>
+</div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </section>
+        <!--banner section end-->
+
+        <!--current location-->
+        <section class="section locationn">
+          <div class="container">
+            <p>It looks like you're in Delhi. Not correct?<img src="images/send2.png" class="img-fluid" alt="img"><a href="javscript:void(0)" onclick="getLocation()">Get current location</a></p>
+            <span class="location"></span>
+          </div>
+        </section>
+        <!--current location end-->
+
+      
+      <!--All events section start-->  
+      <div class="section sec-padding upcoming-events popular-event">
+        <div class="container">
+        <h1>Popular Event In 80 River</h1>
+          <div class="event-cont">
+            <div class="row">
+              <div class="col-md-3">
+                <div class="event-img wow zoomIn" data-wow-duration="1.6s" data-wow-delay="0.25s">
+                  <a href="#">
+                    <img src="images/event1.png" class="img-fluid" alt="img">
+                    <div class="event-dtl">
+                      <span class="evndtl-lft">November 28, 2021</span>
+                      <span class="evndtl-ryt"><img src="images/next.png" class="img-fluid" alt="img"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="event-txt">
+                  <h4>Every Saturday Night Event</h4>
+                  <p>In the event that you appreciate tuning in to incredible music....</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="event-img wow zoomIn" data-wow-duration="1.6s" data-wow-delay="0.25s">
+                  <a href="#">
+                    <img src="images/event2.png" class="img-fluid" alt="img">
+                    <div class="event-dtl">
+                      <span class="evndtl-lft">November 28, 2021</span>
+                      <span class="evndtl-ryt"><img src="images/next.png" class="img-fluid" alt="img"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="event-txt">
+                  <h4>Every Saturday Night Event</h4>
+                  <p>In the event that you appreciate tuning in to incredible music....</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="event-img wow zoomIn" data-wow-duration="1.6s" data-wow-delay="0.25s">
+                  <a href="#">
+                    <img src="images/event3.png" class="img-fluid" alt="img">
+                    <div class="event-dtl">
+                      <span class="evndtl-lft">November 28, 2021</span>
+                      <span class="evndtl-ryt"><img src="images/next.png" class="img-fluid" alt="img"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="event-txt">
+                  <h4>Every Saturday Night Event</h4>
+                  <p>In the event that you appreciate tuning in to incredible music....</p>
+                </div>
+              </div>
+              <div class="col-md-3">
+                <div class="event-img wow zoomIn" data-wow-duration="1.6s" data-wow-delay="0.25s">
+                  <a href="#">
+                    <img src="images/event4.png" class="img-fluid" alt="img">
+                    <div class="event-dtl">
+                      <span class="evndtl-lft">November 28, 2021</span>
+                      <span class="evndtl-ryt"><img src="images/next.png" class="img-fluid" alt="img"></span>
+                    </div>
+                  </a>
+                </div>
+                <div class="event-txt">
+                  <h4>Every Saturday Night Event</h4>
+                  <p>In the event that you appreciate tuning in to incredible music....</p>
+                </div>
+              </div>
+              
+            </div>
+            <a href="#" class="view-all green">View All</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--All events section end--> 
+        <!--top cuisines 80 river-->
+        <section class="top-csns section sec-padding inner-hd pt-0">
+          <div class="container">
+            <h2>Top Cuisines 80 River</h2>
+            <div class="topcsn-cont event-cont">
+              <div class="row event-slider">
+                <div class="col-md-3">
+                  <div class="csn-box">
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="images/top1.png" class="img-fluid" alt="img">
+      <div class="content-details fadeIn-bottom">
+        
+        <p class="content-text">Best Contemporary Indian 
+Restaurants Around You</p>
+      </div>
+    </a>
+  </div>
+</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="csn-box">
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="images/top2.png" class="img-fluid" alt="img">
+      <div class="content-details fadeIn-bottom">
+        
+        <p class="content-text">Best Contemporary Indian 
+Restaurants Around You</p>
+      </div>
+    </a>
+  </div>
+</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="csn-box">
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="images/top3.png" class="img-fluid" alt="img">
+      <div class="content-details fadeIn-bottom">
+        
+        <p class="content-text">Best Contemporary Indian 
+Restaurants Around You</p>
+      </div>
+    </a>
+  </div>
+</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="csn-box">
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="images/top4.png" class="img-fluid" alt="img">
+      <div class="content-details fadeIn-bottom">
+        
+        <p class="content-text">Best Contemporary Indian 
+Restaurants Around You</p>
+      </div>
+    </a>
+  </div>
+</div>
+                </div>
+                <div class="col-md-3">
+                  <div class="csn-box">
+  <div class="content">
+    <a href="#" target="_blank">
+      <div class="content-overlay"></div>
+      <img class="content-image" src="images/top1.png" class="img-fluid" alt="img">
+      <div class="content-details fadeIn-bottom">
+        
+        <p class="content-text">Best Contemporary Indian 
+Restaurants Around You</p>
+      </div>
+    </a>
+  </div>
+</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!--top cuisines 80 river-->
+
+        <!--explore open event section start-->
+        <section class="section sec-padding explore-event inner-hd">
+          <div class="container">
+            <h2>Explore Open Event</h2>
+            <div class="expevnt-cont">
+              <div class="pro-tab">
+<ul class="nav nav-tabs" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" data-toggle="tab" href="#tabs-10" role="tab">Description</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#tabs-2" role="tab">Product Group Variations</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" data-toggle="tab" href="#tabs-3" role="tab">Specifications</a>
+  </li>
+ 
+</ul><!-- Tab panes -->
+</div>
+<div class="tab-content wow fadeInUp" data-wow-duration="1.6s" data-wow-delay="0.25s">
+  <div class="tab-pane active" id="tabs-10" role="tabpanel">
+    <div class="tab-box">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tab-txt">
+              <div class="tab-list">
+                <ul class="list">
+                 <li> <a href="#">Columbus</a></li>
+                  <li><a href="#">New York Area</a></li>
+                  <li><a href="#"><a href="#">Caribbean</a></li>
+                  <li><a href="#">Washington DC</a></li>
+                  <li><a href="#">Denver</a></li>
+                  <li><a href="#">New England</a></li>
+                  <li><a href="#">Chicago</a></li>
+                  <li><a href="#">New Orleans</a></li>
+                  <li><a href="#">Poconos</a></li>
+                  <li><a href="#">Los Angeles</a></li>
+                  <li><a href="#">Grand Rapids</a></li>
+                  <li><a href="#">Philadelphia</a></li>
+                  <li><a href="#">Columbus</a></li>
+                  <li><a href="#">New York Area</a></li>
+                  <li><a href="#">Caribbean</a></li>
+                  <li><a href="#">Washington DC</a></li>
+                  <li><a href="#">Columbus</a></li>
+                  <li><a href="#">New York Area</a></li>
+                  <li><a href="#">Caribbean</a></li>
+                  <li><a href="#">Washington DC</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="tabs-2" role="tabpanel">
+    <div class="tab-box">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tab-txt">
+              <div class="tab-list">
+                <ul class="list">
+                  
+                  <li><a href="#">Chicago</a></li>
+                  <li><a href="#">New Orleans</a></li>
+                  <li><a href="#">Columbus</a></li>
+                  <li><a href="#">New York Area</a></li>
+                <li><a href="#">Caribbean</a></li>
+                  <li><a href="#">Washington DC</a></li>
+                  <li><a href="#">Denver</a></li>
+                  <li><a href="#">New England</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="tab-pane" id="tabs-3" role="tabpanel">
+    <div class="tab-box">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="tab-txt">
+              <div class="tab-list">
+                <ul class="list">
+                  <li><a href="#">Columbus</a></li>
+                  <li><a href="#">New York Area</a></li>
+                <li><a href="#">Caribbean</a></li>
+                  <li><a href="#">Washington DC</a></li>
+                  <li><a href="#">Denver</a></li>
+                  <li><a href="#">New England</a></li>
+                  <li><a href="#">Chicago</a></li>
+                  <li><a href="#">New Orleans</a></li>
+                  
+                </ul>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+          </div>
+        </section>
+        <!--explore open event section end-->
+
+
+    <!--contact us section start--> 
+  <section class="section contact sec-padding inner-contact">
+    <h2>Contact Us</h2>
+    <p class="para-hd">To join 80 River Bar & Kitchen crew please fill out the form!</p>
+    <div class="container">
+      <div class="contact-cont">
+        <form>
+          <div class="row">
+            <div class="col-md-4">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="First Name" id="f-name">
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="Last Name" id="l-name">
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+              <input type="Email" class="form-control" placeholder="Email" id="Email">
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+              <input type="date" class="form-control" placeholder="Birthday" id="Birthday">
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+
+              <input type="number" class="form-control" placeholder="Phone no." id="hnno">
+            </div>
+            </div>
+            <div class="col-md-4">
+              <div class="form-group">
+              <input type="text" class="form-control" placeholder="Hoboken resident?" id="res">
+            </div>
+            </div>
+
+            <div class="col-md-12">
+              <button class="btn">Let's Go<span class="btn-img"><img src="images/send.png" class="img-fluid" alt="img"></span></button>
+            </div>
+          </div>
+          </form>
+      </div>
+    </div>
+  </section> 
+    <!--contact us section end-->  
+
+    <!--footer section start-->
+    <section class="footer section">
+      <div class="container">
+        <div class="footer-cont">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="footer-lft">
+                <span class="timer"><img src="images/clock2.png" class="img-fluid" alt="img"></span>
+                <ul>
+                  <li>THUR, FRI 4:00 PM - 10:00 PM</li>
+                  <li>SUN, SAT 12:00 PM - 10:00 PM</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-mdl">
+                <div class="footer-logo">
+                  <img src="images/footer-logo.png" class="img-fluid" alt="img">
+                </div>
+                <ul class="icons-scl">
+<li><a href="#" target="_blank"><i class="fab fa-facebook-f"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-instagram"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-twitter"></i></a></li>
+<li><a href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li></ul>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="footer-ryt">
+                <ul>
+                  <li><img src="images/phone.png" class="img-fluid" alt="img"><a href="#">(201)-420-7070</a></li>
+                  <li><img src="images/pin.png" class="img-fluid" alt="img">80 River StHoboken, NJ 07030</li>
+                  <li><img src="images/mail.png" class="img-fluid" alt="img"><a href="#">80riverrsvp@gmail.com</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--footer section end-->
+    <!--copyright section start-->
+    <section class="section copyright text-center">
+      <div class="container">
+        <p>Website design, Social Media marketing and Email marketing provided by SpotHopper.</p>
+      </div>
+    </section>
+    <!--copyright section end-->
+
+    <!--side buttons section start-->
+    <div class="side-buttons">
+      <div class="container">
+        <ul>
+          <li><a href="#"><img src="images/cart.png" class="img-fluid" alt="img"></a></li>
+          <li><a href="#"><img src="images/gallery.png" class="img-fluid" alt="img"></a></li>
+          <li><a href="#"><img src="images/call.png" class="img-fluid" alt="img"></a></li>
+        </ul>
+      </div>
+    </div>
+    <!--side buttons section end-->  
+  
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="js/slick.js"></script>
+        <script type="text/javascript" src="js/custom.js"></script>
+         <script>
+    new WOW().init();
+</script>
+    </body>
+</html>
